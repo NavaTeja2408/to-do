@@ -1,18 +1,16 @@
 
 import './App.css';
-import { useContext  } from 'react';
-import { UserContext } from './components/Context';
+
 import Login from './components/Login';
 import Home from './components/Home';
 import Signin from './components/Signin';
-import {Navigate , Route , Routes } from 'react-router-dom';
+import { Route , Routes } from 'react-router-dom';
 import { UserContextProvider } from './components/Context';
 import {Toaster} from 'react-hot-toast'
 
 
 
 function App() {
-  const {user} = useContext(UserContext)
 
   return (
     <div className='bg-slate-50 h-screen overflow-hidden' >

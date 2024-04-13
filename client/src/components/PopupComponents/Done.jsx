@@ -7,7 +7,7 @@ const Done = ({stateChange , dataid , stateChangeDone , temp}) => {
         const dataId = dataid; // Assuming `dataid` is defined somewhere in your code
       
         try {
-          const response = await axios.delete('http://localhost:8000/deletedata', { data: { dataId } });
+          const response = await axios.delete('https://to-do-server-w6ww.onrender.com/deletedata', { data: { dataId } });
           const data = response.data;
           if (data.error) {
             toast.error(data.error)

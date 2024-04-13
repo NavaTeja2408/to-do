@@ -18,7 +18,7 @@ const Home = () => {
   
   useEffect(() => {
       const {id} = verifiedData
-      axios.get('http://localhost:8000/getdata' , {id}).then(({data}) => setList(data))
+      axios.get('https://to-do-server-w6ww.onrender.com/getdata' , {id}).then(({data}) => setList(data))
   } , [temp , verifiedData ])
  
   

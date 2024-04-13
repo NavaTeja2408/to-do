@@ -22,7 +22,7 @@ const AddNew = ({stateChange , temp , popupState }) => {
     try {
         
 
-        const {data} = await axios.post('http://localhost:8000/adddata'  , {
+        const {data} = await axios.post('https://to-do-server-w6ww.onrender.com/adddata'  , {
           thing , date , id
         })
         

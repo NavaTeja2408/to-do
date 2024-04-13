@@ -22,7 +22,7 @@ export function UserContextProvider({children}) {
 
             const headers = { 'Authorization': 'Bearer ' + token };
     
-            axios.get('http://localhost:8000/current' , {headers})
+            axios.get('https://to-do-server-w6ww.onrender.com/current' , {headers})
             .then(({data}) => {
                
                 setVerifiedData({name : data.name , id : data.id})
