@@ -8,7 +8,7 @@ import { UserContext } from './Context'
 const Home = () => {
   const navigate = useNavigate()
   const [search , setSearch] = useState('')
-  const {verifiedData  , setUser  , user} = useContext(UserContext)
+  const {verifiedData  } = useContext(UserContext)
   const [popupforadd , setPopupforadd] = useState(false)
 
   const [temp , setTemp] = useState(0)
