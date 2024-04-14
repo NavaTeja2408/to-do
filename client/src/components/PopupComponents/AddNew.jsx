@@ -20,7 +20,7 @@ const AddNew = ({stateChange , temp , popupState }) => {
     const {thing , date} = todo
     const { id} = verifiedData
     try {
-      popupState(false)
+        popupState(false)
 
         const {data} = await axios.post('https://to-do-server-w6ww.onrender.com/adddata'  , {
           thing , date , id
@@ -54,7 +54,7 @@ const AddNew = ({stateChange , temp , popupState }) => {
   return (
     <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center " >
       <form onSubmit={handleOnSubmit}
-      className='w-2/3 p-9 bg-slate-50  flex items-center justify-center flex-col space-y-8 border-4 border-sky-400 rounded-xl'
+      className='w-4/5 p-9 bg-slate-50  flex items-center justify-center flex-col space-y-8 border-4 border-sky-400 rounded-xl'
      >
         <div className='flex flex-col space-x-3 '>
           <label className='text-sm sm:text-xl'>Task Name: </label>
