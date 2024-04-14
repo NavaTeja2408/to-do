@@ -5,6 +5,7 @@ const DeleteConform = ({stateChange , closeTab , dataid , temp}) => {
 
   const handleDelete = async () => {
     const dataId = dataid; // Assuming `dataid` is defined somewhere in your code
+    closeTab(false)
   
     try {
       const response = await axios.delete('https://to-do-server-w6ww.onrender.com/deletedata', { data: { dataId } });
@@ -14,7 +15,7 @@ const DeleteConform = ({stateChange , closeTab , dataid , temp}) => {
         console.log(data.error);
       } else {
         stateChange(temp + 1); // Assuming `temp` is defined and is part of your state management
-        closeTab(false)
+       
         toast.success('Successfully deleted')
       }
     } catch (error) {

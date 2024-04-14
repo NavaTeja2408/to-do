@@ -20,7 +20,7 @@ const AddNew = ({stateChange , temp , popupState }) => {
     const {thing , date} = todo
     const { id} = verifiedData
     try {
-        
+      popupState(false)
 
         const {data} = await axios.post('https://to-do-server-w6ww.onrender.com/adddata'  , {
           thing , date , id
@@ -39,7 +39,7 @@ const AddNew = ({stateChange , temp , popupState }) => {
               thing: '' ,
               date : ''
             })
-            popupState(false)
+            
             // console.log(token)
 
         }
