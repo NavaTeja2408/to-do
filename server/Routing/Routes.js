@@ -9,7 +9,7 @@ const validate = require('../Components/verifyToken');
 
 const corsoption = {
     credentials: true ,
-    origin: ['http://localhost:3000' , 'https://to-do-server-w6ww.onrender.com'  , '*'],
+    origin: ['http://localhost:3000' , 'https://to-do-server-w6ww.onrender.com'  , 'https://661bcf19dc2f1f63e468f0d2--tangerine-yeot-066436.netlify.app ' ,  '*'],
     optionStatus : 200
 
 }
