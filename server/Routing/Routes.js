@@ -9,7 +9,7 @@ const validate = require('../Components/verifyToken');
 
 const corsoption = {
     credentials: true ,
-    origin: ['http://localhost:3000' , 'https://to-do-server-w6ww.onrender.com' ],
+    origin: ['http://localhost:3000' , 'https://to-do-server-w6ww.onrender.com'  , '*'],
     optionStatus : 200
 
 }
